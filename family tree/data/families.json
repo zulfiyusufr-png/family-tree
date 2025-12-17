@@ -1,0 +1,36 @@
+{
+  "families": [
+    {
+      "family_id": "keluarga_santoso",
+      "family_name": "Keluarga Santoso",
+      "members": [
+        {
+          "id": 1,
+          "name": "Budi Santoso",
+          "partners": [2],
+          "parentIds": [],
+          "birth": "1970-01-01",
+          "bio": "Pendiri keluarga.",
+          "photo": "assets/photos/budi.png"
+        },
+        {
+          "id": 2,
+          "name": "Siti Aminah",
+          "partners": [1],
+          "parentIds": [],
+          "birth": "1972-02-02",
+          "photo": "assets/photos/siti.png"
+        },
+        {
+          "id": 3,
+          "name": "Andi Santoso",
+          "partners": [],
+          "parentIds": [1,2],
+          "birth": "1995-08-12",
+          "bio": "Anak pertama keluarga Santoso.",
+          "photo": "assets/photos/andi.png"
+        }
+      ]
+    }
+  ]
+}

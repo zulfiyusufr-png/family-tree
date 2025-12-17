@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Family Tree Publik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <h1>🌳 Family Tree Publik</h1>
+</header>
+
+<main class="home">
+  <p>Pilih keluarga untuk melihat silsilah</p>
+  <div id="family-list"></div>
+</main>
+
+<script>
+fetch('data/families.json')
+  .then(res => res.json())
+  .then(data => {
+    const list = document.getElementById('family-list');
+    data.families.forEach(f => {
+      const card = document.createElement('div');
+      card.className = 'family-card';
+      card.textContent = f.family_name;
+      card.onclick = () => {
+        location.href = `family.html?family=${f.family_id}`;
+      };
+      list.appendChild(card);
+    });
+  });
+</script>
+
+</body>
+</html>

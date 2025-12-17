@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Family Tree</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://balkan.app/js/FamilyTree.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="back">← Kembali</a>
+  <h1>🌳 Family Tree</h1>
+</header>
+
+<section class="toolbar">
+  <input id="search" type="text" placeholder="🔍 Cari anggota keluarga">
+  <div class="actions">
+    <button onclick="exportImage()">PNG</button>
+    <button onclick="exportPDF()">PDF</button>
+  </div>
+</section>
+
+<main id="tree"></main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/tree.js"></script>
+
+</body>
+</html>
